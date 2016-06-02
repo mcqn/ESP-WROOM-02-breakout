@@ -1,0 +1,150 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:ESP-WROOM-02-breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-13-WROOM-02 U1
+U 1 1 574AFEB0
+P 5700 3600
+F 0 "U1" H 5675 4365 50  0000 C CNN
+F 1 "ESP-13-WROOM-02" H 5675 4274 50  0000 C CNN
+F 2 "ESP8266:ESP-13-WROOM-02" H 5600 3600 50  0001 C CNN
+F 3 "" H 5600 3600 50  0001 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X09 P2
+U 1 1 574AFEF7
+P 7000 3700
+F 0 "P2" H 7078 3741 50  0000 L CNN
+F 1 "CONN_01X09" H 7078 3650 50  0000 L CNN
+F 2 "adafruit:1X09-BIG" H 7000 3700 50  0001 C CNN
+F 3 "" H 7000 3700 50  0000 C CNN
+	1    7000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X09 P1
+U 1 1 574AFF6B
+P 4350 3700
+F 0 "P1" H 4428 3741 50  0000 L CNN
+F 1 "CONN_01X09" H 4428 3650 50  0000 L CNN
+F 2 "adafruit:1X09-BIG" H 4350 3700 50  0001 C CNN
+F 3 "" H 4350 3700 50  0000 C CNN
+	1    4350 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 574F2033
+P 5700 4650
+F 0 "#PWR01" H 5700 4400 50  0001 C CNN
+F 1 "GND" H 5705 4477 50  0000 C CNN
+F 2 "" H 5700 4650 50  0000 C CNN
+F 3 "" H 5700 4650 50  0000 C CNN
+	1    5700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 574F2180
+P 6700 3150
+F 0 "#PWR?" H 6700 2900 50  0001 C CNN
+F 1 "GND" H 6705 2977 50  0000 C CNN
+F 2 "" H 6700 3150 50  0000 C CNN
+F 3 "" H 6700 3150 50  0000 C CNN
+	1    6700 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 3300 6800 3300
+Wire Wire Line
+	6650 3400 6800 3400
+Wire Wire Line
+	6650 3500 6800 3500
+Wire Wire Line
+	6650 3600 6800 3600
+Wire Wire Line
+	6650 3700 6800 3700
+Wire Wire Line
+	6650 3800 6800 3800
+Wire Wire Line
+	6650 3900 6800 3900
+Wire Wire Line
+	6650 4000 6800 4000
+Wire Wire Line
+	6650 4100 6800 4100
+Wire Wire Line
+	4700 3300 4550 3300
+Wire Wire Line
+	4700 3400 4550 3400
+Wire Wire Line
+	4700 3500 4550 3500
+Wire Wire Line
+	4700 3600 4550 3600
+Wire Wire Line
+	4700 3700 4550 3700
+Wire Wire Line
+	4700 3800 4550 3800
+Wire Wire Line
+	4700 3900 4550 3900
+Wire Wire Line
+	4700 4000 4550 4000
+Wire Wire Line
+	4700 4100 4550 4100
+Wire Wire Line
+	5700 4500 5700 4650
+Wire Wire Line
+	6700 3150 6700 3800
+Connection ~ 6700 3300
+Connection ~ 6700 3800
+Wire Wire Line
+	5700 4550 4600 4550
+Wire Wire Line
+	4600 4550 4600 4100
+Connection ~ 4600 4100
+Connection ~ 5700 4550
+$EndSCHEMATC
