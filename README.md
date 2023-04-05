@@ -22,6 +22,12 @@ Once wired up, if you open a serial monitor at the rather odd baud rate of 74880
 
 If you see random garbage data then the baud rate is most likely wrong.  Many serial monitors (including `screen` on Linux) won't recognise the non-standard baud rate of 74880.  If you've got `pyserial` installed (e.g. if you've installed `esptool.py`) then you can use `miniterm.py`.
 
+#### Boot Mode
+
+The output at the odd baud rate will include a message `boot mode:(3,6)` or similar.  The numbers indicate how it's booted up.
+
+The first digit indicates whether or not it's in programming mode.  `3` indicates normal boot, and `1` shows that it's ready for programming over serial.
+
 ### Programming With the Arduino IDE
 
  1. Install the latest version of the Arduino IDE - [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
